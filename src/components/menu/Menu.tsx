@@ -3,6 +3,8 @@ import './menu.scss'
 import { menu } from '../../data'
 
 const Menu = () => {
+  
+  
   return (
     <div className='menu'>
       {
@@ -11,7 +13,7 @@ const Menu = () => {
             <span className="title">{item.title}</span>
            {
            item.listItems.map(listItem=>(
-            <Link to='/' key={listItem.id} className='listItem'>
+            <Link to={listItem.url} key={listItem.id} className='listItem'>
             <img src={listItem.icon} alt="" />
             <span className='listItemTitle'>{listItem.title}</span>
           </Link>
