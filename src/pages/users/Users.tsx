@@ -55,11 +55,15 @@ const columns: GridColDef[] = [
 ];
 const Users = () => {
   const [open, setOpen] = useState(false)
+
+
+
+
   return (
     <div className="users">
       <div className="info">
         <h1>Users</h1>
-        <button onClick={()=>setOpen(true)}>Add New User</button>
+        <button onClick={() => setOpen(true)}>Add New User</button>
       </div>
       <DataTable slug='users' columns={columns} rows={userRows} />
       {open && <Add slug='user' columns={columns} setOpen={setOpen} />}

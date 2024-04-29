@@ -14,9 +14,8 @@ import './styles/global.scss'
 import User from "./pages/user/User";
 import Product from "./pages/product/Product";
 
+
 function App() {
-
-
   const Layout = () => {
     return (
       <div className="main">
