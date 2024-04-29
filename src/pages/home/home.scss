@@ -19,14 +19,19 @@
     @include md {
         grid-template-columns: repeat(1, 1fr);
     }
+
     @include sm {
         grid-auto-rows: minmax(120px, auto);
     }
+
     .box {
         padding: 20px;
         border-radius: 10px;
         border: 2px solid $soft-bg;
 
+        @include sm {
+            width: 99%;
+        }
     }
 
     .box1 {

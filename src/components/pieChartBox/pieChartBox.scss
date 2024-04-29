@@ -6,11 +6,12 @@
     flex-direction: column;
     justify-content: space-between;
 
-    h1{
-        @include xxl{
+    h1 {
+        @include xxl {
             font-size: 24px;
         }
     }
+
     .chart {
         display: flex;
         align-items: center;
@@ -25,15 +26,23 @@
         gap: 10px;
         font-size: 14px;
 
+        @include sm {
+            :last-child {
+                display: none;
+            }
+        }
+
         .option {
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 10px;
+
             .title {
                 display: flex;
                 gap: 10px;
                 align-items: center;
+
                 .dot {
                     width: 10px;
                     height: 10px;
